@@ -106,3 +106,8 @@ source $ZSH/oh-my-zsh.sh
 
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+  fi
+}
+
